@@ -7,11 +7,11 @@
 
 (defn jogo [vidas] 
     (if (= vidas 0)
-    				(perdeu)
-    				(do
-    								(print vidas)
-    				    (jogo (dec vidas))
-    				)
+        (perdeu)
+        (do
+            (print vidas)
+            (jogo (dec vidas))
+        )
     )
 )
 
