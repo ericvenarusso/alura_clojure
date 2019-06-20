@@ -19,16 +19,16 @@
 
 (defn jogo [vidas]
     (if (= vidas 0) 
-    				(perdeu)
-    				(do
-    				    (print vidas)
-    				    (jogo(dec vidas))
-    				)
+        (perdeu)
+        (do
+            (print vidas)
+            (jogo(dec vidas))
+        )
     )
-)
+ )
 
 ; Funcao recursiva
 (defn fib [n]
     (if (= n 0) 0
     (if (= n 1) 1
-				(+ (fib (- n 1)) (fib (- n 2))))))
+    (+ (fib (- n 1)) (fib (- n 2))))))
